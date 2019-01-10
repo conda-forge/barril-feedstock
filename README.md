@@ -111,6 +111,7 @@ Feedstock Maintainers
 =====================
 
 * [@igortg](https://github.com/igortg/)
+* [@jaimeambrus](https://github.com/jaimeambrus/)
 * [@kfasolin](https://github.com/kfasolin/)
 * [@lincrosenbach](https://github.com/lincrosenbach/)
 * [@nicoddemus](https://github.com/nicoddemus/)
