@@ -1,5 +1,5 @@
 {% set name = "barril" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,23 +7,23 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e9008f4806483958a31cde967b17c3f924db84464f9b755946176d46e972da94
+  sha256: d2166c17eef9a6f5fa85867ab9202a30b6d6f820150da77d67263fee915100ce
 
 build:
-  skip: True  # [py35]
-  number: 1000
+  noarch: python
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools_scm
   run:
     - attrs >=18.1.0
     - numpy >=1.11.0
-    - python
-    - ruamel.ordereddict >=0.4.6  # [py27]
+    - oop-ext >=0.2.4
+    - python >=3.6
 
 test:
   imports:

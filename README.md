@@ -1,8 +1,6 @@
 About barril
 ============
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
-
 Home: https://github.com/ESSS/barril
 
 Package license: MIT
@@ -16,9 +14,14 @@ Summary: Python package to manage units for physical quantities
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/barril-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/barril-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/barril-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/barril-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/barril-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/barril-feedstock/branch/master)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -51,6 +54,8 @@ conda search barril --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
