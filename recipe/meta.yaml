@@ -11,20 +11,19 @@ source:
 
 build:
   noarch: python
-  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
   host:
     - pip
-    - python >= 3.6
+    - python >=3.6
     - setuptools_scm
   run:
     - attrs >=18.1.0
     - numpy >=1.11.0
     - oop-ext >=0.2.4
-    - python >= 3.6
+    - python >=3.6
 
 test:
   imports:
