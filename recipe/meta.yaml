@@ -10,20 +10,20 @@ source:
   sha256: d2166c17eef9a6f5fa85867ab9202a30b6d6f820150da77d67263fee915100ce
 
 build:
-  skip: True  # [py35]
+  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
 
 requirements:
   host:
     - pip
-    - python
+    - python >= 3.6
     - setuptools_scm
   run:
     - attrs >=18.1.0
     - numpy >=1.11.0
-    - python
-    - ruamel.ordereddict >=0.4.6  # [py27]
+    - oop-ext >=0.2.4
+    - python >= 3.6
 
 test:
   imports:
