@@ -5,11 +5,9 @@ Home: https://github.com/ESSS/barril
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/barril-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python package to manage units for physical quantities
-
-
 
 Current build status
 ====================
@@ -122,4 +120,5 @@ Feedstock Maintainers
 * [@lincrosenbach](https://github.com/lincrosenbach/)
 * [@nicoddemus](https://github.com/nicoddemus/)
 * [@tadeu](https://github.com/tadeu/)
+* [@williamjamir](https://github.com/williamjamir/)
 
