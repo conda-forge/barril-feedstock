@@ -1,18 +1,18 @@
 {% set name = "barril" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 60ace182ca3f722618924af9df5f19e0716593517125f59d180dff3356d532fe
+  sha256: 7cd4e85fefaf2cf400e84fa3bd7c78b8047b872b30d02f9ede0d60105d6561d6
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
