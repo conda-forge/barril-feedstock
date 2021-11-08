@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2423f24386d8b3b0826edd4c95646d009090430b31110ea1f7ed3d5b6191d0d4
+  sha256: df83c6b35d730048908693cbc9c02909b6e2ff2edafb4c258c571fef5670cff7
 
 build:
   noarch: python
@@ -27,12 +27,7 @@ requirements:
 
 test:
   imports:
-    - barril
-    - barril.basic
-    - barril.basic.format_float
-    - barril.basic.fraction
-    - barril.units
-    - barril.units.scalar_validation
+    - barril    
   requires:
     - pytest
     - pytest-mock
