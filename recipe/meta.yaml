@@ -1,5 +1,5 @@
 {% set name = "barril" %}
-{% set version = "1.11.1" %}
+{% set version = "1.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1004d7ff88b8525bde2bcf0b1e3f5da7be33c6d406063ecaebf6aa7b8a0c00c3
+  sha256: df83c6b35d730048908693cbc9c02909b6e2ff2edafb4c258c571fef5670cff7
 
 build:
   noarch: python
@@ -24,15 +24,11 @@ requirements:
     - numpy >=1.11.0
     - oop-ext >=0.2.4
     - python >=3.6
+    - typing_extensions
 
 test:
   imports:
-    - barril
-    - barril.basic
-    - barril.basic.format_float
-    - barril.basic.fraction
-    - barril.units
-    - barril.units.scalar_validation
+    - barril    
   requires:
     - pytest
     - pytest-mock
