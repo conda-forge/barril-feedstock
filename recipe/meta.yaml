@@ -1,5 +1,5 @@
 {% set name = "barril" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df83c6b35d730048908693cbc9c02909b6e2ff2edafb4c258c571fef5670cff7
+  sha256: f595f1e9696a5514657b49b6f9902248ca22453254ed45a13bbf03b8e7b2d876
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - barril    
+    - barril
   requires:
     - pytest
     - pytest-mock
