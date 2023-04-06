@@ -1,11 +1,11 @@
-About barril
-============
+About barril-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/barril-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ESSS/barril
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/barril-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python package to manage units for physical quantities
 
