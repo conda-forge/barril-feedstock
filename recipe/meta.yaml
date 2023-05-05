@@ -1,5 +1,5 @@
 {% set name = "barril" %}
-{% set version = "1.16.0" %}
+{% set version = "1.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dc04d7ff96bffc9556335b0959d46a35870478e5332c01fa33267edd7fc988c0
+  sha256: 8fede437b98b488300e7fc3fc9a662bb01fbe03392bd7c0257edfb9a94e12d8a
 
 build:
   noarch: python
