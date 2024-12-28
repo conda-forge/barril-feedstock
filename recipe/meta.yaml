@@ -6,24 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f344dacf795d3410c8191f585eba663bb85d0db1f1db6a6348b52fa9ecb52f7f
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.8
-    - setuptools_scm
+    - python {{ python_min }}
+    - setuptools
+    - setuptools_scm    
   run:
     - attrs >=18.1.0
     - numpy >=1.11.0
     - oop-ext >=1.1
-    - python >=3.8
+    - python >={{ python_min }}
     - typing_extensions
 
 test:
@@ -32,6 +33,7 @@ test:
   requires:
     - pytest
     - pytest-mock
+    - python {{ python_min }}
   commands:
     - pytest --pyargs barril
 
