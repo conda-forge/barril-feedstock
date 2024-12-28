@@ -18,7 +18,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools_scm
+    - setuptools
+    - setuptools_scm    
   run:
     - attrs >=18.1.0
     - numpy >=1.11.0
